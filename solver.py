@@ -2,7 +2,7 @@
 Made by Calvin Miller (CalvinMiller190)
 
 World's hardest sudoku (800000000003600000070090200050007000000045700000100030001000068008500010090000400)
-Can be solved in >4 seconds!!
+Can be solved in >6 seconds!!
 
 Uses backtracing.
 
@@ -52,7 +52,7 @@ def solve(bo):
 
 def valid(bo, pos, num):
     for i in range(0, len(bo)):
-        if bo[pos[0]][i] == num and pos[1] != i:
+        if bo[pos[0]][i] == num and pos[0] != i:
             return False
 
     for i in range(0, len(bo)):
