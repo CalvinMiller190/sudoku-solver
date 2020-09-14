@@ -51,17 +51,13 @@ def solve(bo):
 
 
 def valid(bo, pos, num):
-    # Check row
     for i in range(0, len(bo)):
         if bo[pos[0]][i] == num and pos[1] != i:
             return False
 
-    # Check Col
     for i in range(0, len(bo)):
         if bo[i][pos[1]] == num and pos[1] != i:
             return False
-
-    # Check box
 
     box_x = pos[1]//3
     box_y = pos[0]//3
