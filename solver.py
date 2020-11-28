@@ -1,13 +1,3 @@
-""" 
-Made by Calvin Miller (CalvinMiller190)
-
-World's hardest sudoku (800000000003600000070090200050007000000045700000100030001000068008500010090000400)
-Can be solved in >6 seconds!!
-
-Uses backtracing.
-
-"""
-
 def get_board():
     correct = False
     while not correct:
